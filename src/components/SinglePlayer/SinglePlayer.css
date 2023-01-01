@@ -1,0 +1,18 @@
+.card {
+  width: 350px;
+  height: 450px;
+  /* border: 2px solid grey; */
+  margin: 2px;
+  box-shadow: 2px 2px 8px grey;
+}
+.player-img {
+  width: 250px;
+}
+.card-btn {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+}
