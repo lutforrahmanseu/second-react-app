@@ -6,7 +6,7 @@ const Players = ({ players, card, setCard }) => {
   console.log(players);
   return (
     <div className="card-container">
-      {players.map((singlePlayer) => (
+      {players?.map((singlePlayer) => (
         <SinglePlayer
           player={singlePlayer}
           key={singlePlayer.idPlayer}
