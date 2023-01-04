@@ -3,7 +3,6 @@ import SinglePlayer from "../SinglePlayer/SinglePlayer";
 
 import "./Players.css";
 const Players = ({ players, card, setCard }) => {
-  console.log(players);
   return (
     <div className="card-container">
       {players?.map((singlePlayer) => (
