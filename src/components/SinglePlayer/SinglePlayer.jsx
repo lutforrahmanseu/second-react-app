@@ -20,7 +20,7 @@ const SinglePlayer = ({ player, card, setCard }) => {
       strPlayer,
       idPlayer,
       strCutout,
-      price: 150,
+      quantity: 1,
       bookMark: "true",
     };
     const prevBookMark = localStorage.getItem("bookMark");
@@ -28,7 +28,9 @@ const SinglePlayer = ({ player, card, setCard }) => {
     if (oldBookMark) {
       const isExist = oldBookMark.find((p) => p.idPlayer === idPlayer);
       if (isExist) {
-        alert("Already Bookmark");
+        isExist.quantity = isExist.quantity + 1;
+        localStorage.setItem("bookMark", JSON.stringify(oldBookMark));
+        console.log(isExist);
         return;
       } else {
         localStorage.setItem(
